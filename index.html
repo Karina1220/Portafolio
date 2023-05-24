@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Portafolio</title>
+    <link rel="shortcut icon" href="img/alexcgdesign.png" type="image/x-icon">
+    <link rel="stylesheet" href="css/estilos.css">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,700,800&display=swap" rel="stylesheet"> 
+</head>
+
+<body>
+    <header>
+       <!-- se creara nuestra barrra de menú -->
+        <nav>
+            <a href="#">Inicio</a>
+            <a href="#descripcion">Descripción</a>
+            <a href="#portafolio">Portafolio</a>
+            <a href="#datos">Datos Curiosos</a>
+        </nav>
+        <section class="textos-header">
+            <h2>INGENIERÍA</h2>
+            <h1>EN SISTEMAS COMPUTACIONALES</h1>
+        </section>
+        <!-- Se establece la forma de nuestra imagen del titulo  -->
+        <div class="wave" style="height: 150px; overflow: hidden;"><svg viewBox="0 0 500 150" preserveAspectRatio="none"
+                style="height: 100%; width: 100%;">
+                <path d="M0.00,49.98 C150.00,150.00 349.20,-50.00 500.00,49.98 L500.00,150.00 L0.00,150.00 Z"
+                    style="stroke: none; fill: #fff;"></path>
+            </svg></div>
+    </header>
+    <main>
+        <!-- La primera sección es la que tendra la descripción del blog asi como una pequeña imagen referente al tema  -->
+        <section class="contenedor sobre-nosotros" id="descripcion">
+            <h2 class="titulo">Descripción</h2>
+            <div class="contenedor-sobre-nosotros">
+                <img src="img/img11.jpeg" alt="" class="imagen-about-us">
+                <div class="contenido-textos">
+                    
+                    <p>Mi nombre es Karina Torres y soy estudiante de la carrera de Ingeniería de Sistemas Computacionales. 
+                        Actualmente, me encuentro cursando el sexto semestre. El propósito de este blog es compartir diversos 
+                        materiales relacionados con cada una de las asignaturas de mi carrera, así como compartir datos curiosos o relevantes.</p>
+                    <h3>Importancia</h3>
+                    <p>
+                        La carrera de Sistemas Computacionales es altamente relevante en la actualidad debido al creciente 
+                        impacto de las tecnologías de la información y la comunicación en nuestra sociedad.</p>
+                </div>
+            </div>
+        </section>
+         <!-- La sección es sobre el portafolio   -->
+        <section class="portafolio" id="portafolio">
+            <div class="contenedor">
+                <h2 class="titulo">Portafolio</h2>
+                <div class="galeria-port"> <!-- utilizaremos la clase galeria-port para poder darle formato-->
+                    <div class="imagen-port">
+                        <img src="img/img1.jpg" alt="">
+                        <div class="hover-galeria">
+                            <img src="img/icono1.png" alt="">
+                            <p id="redireccionar" >FUNDAMENTOS DE PROGRAMACIÓN</p><!-- Se utiliza el ide para poder redireccionar a la siguiente pagina html   -->
+                        </div>
+                    </div>
+                    <div class="imagen-port">
+                        <img src="img/img2.png" alt="">
+                        <div class="hover-galeria">
+                            <img src="img/icono1.png" alt="">
+                            <p id="redireccionar1" >PROGRAMACIÓN ORIENTADA A OBJETOS</p>
+                        </div>
+                    </div>
+                    <div class="imagen-port">
+                        <img src="img/img3.jpg" alt="">
+                        <div class="hover-galeria">
+                            <img src="img/icono1.png" alt="">
+                            <p id="redireccionar2" >	METODOS NUMERICOS</p>
+                        </div>
+                    </div>
+                    <div class="imagen-port">
+                        <img src="img/img4.png" alt="">
+                        <div class="hover-galeria">
+                            <img src="img/icono1.png" alt="">
+                            <p id="redireccionar3" >TALLER DE SISTEMAS OPERATIVOS</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- La sección los datos curiosos se mostraran en unos pequeños cuadros con una imagen referente al tema  -->
+        <section class="clientes contenedor" id="datos"> <!-- utilizaremos un identificador para el menú de nuestro index -->
+            <h2 class="titulo">Datos curiosos</h2>
+            <div class="cards">
+                <div class="card">
+                    <img src="img/img12.jpg" alt="">
+                    <div class="contenido-texto-card">
+                        <h4>Python</h4>
+                        <p>Python, el famoso lenguaje de programación, debe su nombre no solo a los reptiles, 
+                            sino también a la serie de televisión "Monty Python's Flying Circus". Su creador, Guido van Rossum, 
+                            eligió el nombre en honor a esta comedia británica surrealista que le gustaba.</p>
+
+                    </div>
+                </div>
+                <div class="card">
+                    <img src="img/img13.jpg" alt="">
+                    <div class="contenido-texto-card">
+                        <h4>Lenguaje</h4>
+                        <p>El lenguaje de programación más utilizado en el mundo es JavaScript. JavaScript es un lenguaje de programación de alto nivel que se utiliza principalmente para el desarrollo web.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+     
+    </main>
+    <footer>
+        <!-- La sección del contacto tendra información sobre el autor de la página    -->
+        <div class="contenedor-footer">
+            <div class="content-foo">
+                <h4>Telefono</h4>
+                <p>2284058947</p>
+            </div>
+            <div class="content-foo">
+                <h4>Gmail</h4>
+                <p>kt599076@gmail.com</p>
+            </div>
+            <div class="content-foo">
+                <h4>Ubicación</h4>
+                <p>Xalapa,ver</p>
+            </div>
+        </div>
+    </footer>
+    <!-- En esta parte se crearan los script para poder redireccionar a otras páginas html de nuestto portafolio-->
+    <script>
+        document.getElementById('redireccionar').addEventListener('click', function() {
+          window.location.href = 'programacion.html';
+        });
+      </script>
+      <script>
+        document.getElementById('redireccionar1').addEventListener('click', function() {
+          window.location.href = 'poo.html';
+        });
+      </script>
+      <script>
+        document.getElementById('redireccionar2').addEventListener('click', function() {
+          window.location.href = 'metodos.html';
+        });
+      </script>
+      <script>
+        document.getElementById('redireccionar3').addEventListener('click', function() {
+          window.location.href = 'sistemas.html';
+        });
+      </script>
+</body>
+
+</html>
